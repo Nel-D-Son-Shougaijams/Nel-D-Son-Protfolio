@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}HOME - Nel D Son{% endblock title %}
+{% block body %}
+<div class="fluid-body">
+    <h1>Hello, I am a Full Stack Developer</h1>
+    <p>Transforming ideas into reality with elegant solutions.</p>
+</div>
+<div class="about-me">
+    <p>Hello! I am a dedicated web developer with expertise in backend development and a solid understanding of frontend technologies.I specialize in creating functional and seamless websites, powered by robust backend systems using Django.My skill set includes HTML, CSS, and basic JavaScript, allowing me to integrate features tailored to meet your specific needs.I am proficient in coding with HTML and CSS as well as some basic JavaScript and thus can implement any features required.If you are searching for someone who can manage projects ranging from small scale to medium and can do it for an inexpensive price,then feel free to contact me. Working with you would be a pleasure. Thank you and have a nice day!</p>
+</div>
+<div class="container">
+    <h2>Tools I use</h2>
+    <ul class="skills">
+        <div class="skillitem">
+            <img src="{% static 'python.png' %}"  height="60rem">
+            <p>Python</p>
+        </div>
+        <div class="skillitem">
+            <img src="{% static 'html.png' %}"  height="60rem">
+            <p>HTML</p>
+        </div>
+        <div class="skillitem">
+            <img src="{% static 'css.png' %}"  height="60rem">
+            <p>CSS</p>
+        </div>
+        <div class="skillitem">
+            <img src="{% static 'django.png' %}" height="60rem">
+            <p>Django</p>
+        </div>
+        <div class="skillitem">
+            <img src="{% static 'javascript.png' %}"  height="60rem">
+            <p>JavaScript</p>
+        </div>
+        <div class="skillitem">
+            <img src="{% static 'github.png' %}"  height="60rem">
+            <p>GitHub</p>
+        </div>
+    </ul>
+</div>
+<div class="center-button">
+    <button class="main-button" id="Contact-Button">Contact Me!</button>
+</div>
+<div class="modal" id="contact" style="display: none;">
+    <div class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" placeholder="Your Name" required name="name">
+        <input type="email" placeholder="Your Email" required name="email">
+        <textarea placeholder="Your Message" required name="Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <div class="center-button">
+        <button class="main-button" id="Close-Contact-Modal">Close</button>
+    </div>
+    </div>
+</div>
+
+{% endblock body %}

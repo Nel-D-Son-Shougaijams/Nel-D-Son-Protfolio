@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    {% block body %}
+    {% endblock body %}
+    <footer class="footer">
+        <p>&copy; 2025 Nel D Son Shougaijam. All Rights Reserved.</p>
+        <a href="https://x.com/NelDSonSh"><img src="{% static 'twiter.png' %}" alt="Twitter" style="height: 5rem;"></a>
+        <a href="https://github.com/Nel-D-Son-Shougaijams"><img src="{% static 'github.png' %}" alt="GitHub" style="height: 5rem;"></a>
+        <a href="https://www.instagram.com/freelance_web_devloper"><img src="{% static 'instagram.png' %}" alt="Instagram" style="height: 5rem;"></a>
+        <a href="https://www.reddit.com/user/NelDSon/"><img src="{% static 'reddit.png' %}" alt="Reddit" style="height: 5rem;"></a>
+    </footer>      
+    <script src="{% static 'scripts.js' %}"></script>
+</body>
+</html>

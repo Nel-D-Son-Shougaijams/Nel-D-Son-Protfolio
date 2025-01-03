@@ -1,0 +1,205 @@
+body {
+    background: linear-gradient(to right, #76b5c5, #ece4db);
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.fluid-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.fluid-body h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.fluid-body p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.about-me {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #9dc3d4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.about-me p {
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.container {
+    margin: 40px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.skillitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fac8bf;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skillitem img {
+    margin-bottom: 10px; /* Adds spacing between the image and text */
+    max-width: 80px;
+    height: auto;
+}
+
+.skillitem p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.skillitem:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact {
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: #76b5c5;
+    outline: none;
+    box-shadow: 0 0 5px rgba(118, 181, 197, 0.5);
+}
+
+.contact form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact form button {
+    background-color: #76b5c5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #5c9ca8;
+}
+.center-button {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    height: 100px;          /* Full height of the viewport */
+    text-align: center;     /* Ensures text inside is centered */
+}
+
+.main-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #76b5c5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.main-button:hover {
+    background-color: #5c9ca8;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.main-button:active {
+    background-color: #4a7b8b; /* Darker shade when clicked */
+    transform: scale(0.95);    /* Shrink slightly */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stays in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999; /* Places modal above other elements */
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    text-align: center;
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text */
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    border-top: 2px solid #444; /* Optional styling */
+  }
+  
+  .footer a {
+    color: #4caf50; /* Green links */
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
